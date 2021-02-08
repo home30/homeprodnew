@@ -23,9 +23,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('',include('mainapp.urls'),name='index'),
-    path('team/',include('mainapp.urls')),
-    path('ourpackages/',include('mainapp.urls')),
-    path('landlords/',include('mainapp.urls')),
-    path('modal/',include('mainapp.urls'))
+    # path('team/',include('mainapp.urls')),
+    # path('ourpackages/',include('mainapp.urls')),
+    # path('landlords/',include('mainapp.urls')),
+    # path('modal/',include('mainapp.urls'))
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

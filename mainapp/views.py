@@ -18,3 +18,6 @@ def landlords(request):
 def modal(request):
     teams = team.objects.all()
     return render(request,'mainapp/modal.html',{'teams':teams})
+
+def auction(request):
+    return render(request,'mainapp/auction.html')
