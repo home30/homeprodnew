@@ -1,26 +1,33 @@
 from django.shortcuts import render
 from .models import team
 
+
 # Create your views here.
 def index(request):
     return render(request, 'mainapp/index.html')
 
+
 def expertteam(request):
     teams = team.objects.all()
-    return render(request,'mainapp/team.html',{'teams':teams})
+    return render(request, 'mainapp/team.html', {'teams': teams})
+
 
 def packages(request):
-    return render(request,'mainapp/ourpackages.html')
+    return render(request, 'mainapp/ourpackages.html')
+
 
 def landlords(request):
-    return  render(request,'mainapp/landlords.html')
+    return render(request, 'mainapp/landlords.html')
+
 
 def modal(request):
     teams = team.objects.all()
-    return render(request,'mainapp/modal.html',{'teams':teams})
+    return render(request, 'mainapp/modal.html', {'teams': teams})
+
 
 def auction(request):
-    return render(request,'mainapp/auction.html')
+    return render(request, 'mainapp/auction.html')
+
 
 def management(request):
-    return render(request,'management.html')
+    return render(request, 'mainapp/management.html')
