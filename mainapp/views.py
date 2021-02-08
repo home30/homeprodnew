@@ -21,3 +21,6 @@ def modal(request):
 
 def auction(request):
     return render(request,'mainapp/auction.html')
+
+def management(request):
+    return render(request,'management.html')
