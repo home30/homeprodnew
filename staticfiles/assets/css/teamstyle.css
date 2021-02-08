@@ -1,0 +1,119 @@
+
+img {
+    vertical-align: middle;
+    border-style: 3px solid black;
+    width: 100%;
+    object-fit: contain;
+
+}
+.card-img-top {
+   
+    margin-top: -10rem;
+    width: 80%
+    height:auto;
+}
+
+.card{
+	width: 20rem;
+	margin-top: 12rem;
+}
+
+.card:hover{
+	transform: scale(1.05);
+}
+
+.card-title1{
+	color:black;
+	font-weight: 500;
+	font-size: 1.5rem;
+	padding:  8px; 
+}
+.card .btn{
+	/*background-color: #ffd503;*/
+	/*padding: 3rem 3rem;*/
+	border-radius: 2rem;
+	text-transform: uppercase;
+	/*margin:1rem 0;*/
+	font-size: 1.4rem;
+	transition: all .5s;
+	font-weight: 500;
+	color: black;
+	border : 3px solid #ffd503;
+	box-shadow: 3px 3px #888888;
+	margin-bottom: 20px;
+}
+.card .btn:hover{
+	transform: translateY(-4px);
+	box-shadow: 2px 2px grey;
+}
+
+
+@media (max-width: 576px) {  
+  .xs {color:red;font-weight:bold;}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width:768px) {  
+  .sm {color:red;font-weight:bold;}
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width:992px) {  
+ .md {color:red;font-weight:bold;}
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width:1200px) { 
+ .lg {color:red;font-weight:bold;}
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .xl {color:red;font-weight:bold;}
+}
+ 
+@media only screen and (max-width:700px){
+
+/*.img{
+	display: none;
+}*/
+/*.mainimage {
+    
+   display: none;
+}*/
+.cont-image{
+	border-radius: 50%;
+}
+.mainimage{
+	margin-left: 9rem;
+}
+}
+
+
+@keyframes loadcard{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+
+.card:nth-child(1){
+	animation: loadcard .5s .3s backwards;
+}
+
+.card:nth-child(2){
+	animation: loadcard .5s .6s backwards;
+}
+
+.card:nth-child(3){
+	animation: loadcard .5s 1.2s backwards;
+}
+.card:nth-child(4){
+	animation: loadcard .5s 1.5s backwards;
+}
+
+
+

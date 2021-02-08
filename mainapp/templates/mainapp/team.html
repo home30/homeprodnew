@@ -1,0 +1,104 @@
+{% extends "mainapp/base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+
+
+    <h2>MEET THE EXPERTS</h2>
+    <!--       <img src= "/static/images/viv.png" class="card-img-top">-->
+
+
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+        {% for i in teams %}
+        <div class="col mb-4">
+            <div class="card">
+                <img src="http://18.191.211.57/static/images/{{i.prof_image}}" class="card-img-top">
+
+                <!-- <p class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> London</p> -->
+                <!-- <a href="about" class="btn"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; 0203 5000 999</a> -->
+
+                <div class="card-body"><center>
+                    <h5 class="card-title1"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; {{ i.name }}</h5>
+                    <h5 class="card-title1"> {{ i.job_title }}</h5>
+                    <h5 class="card-title1"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; {{ i.city }}</h5>
+                    <a href="#" class="btn"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;  {{ i.phone }}</a>
+                    <a href="#" class="btn" data-toggle="modal" data-target="#myModal"><i class="fa fa-envelope"
+                                                                                          aria-hidden="true"></i> &nbsp;
+                        Know more</a></center>
+                </div>
+
+            </div>
+
+        </div>
+         {% endfor %}
+    </div>
+{% for j in teams %}
+<div class="modal fade"  id="myModal">
+
+	<div class="modal-dialog modal-xl">
+
+		<div class="modal-content">
+			<!-- Modal Header -->
+			<div class="modal-header">
+				<h4 class="modal-title"><center>Meet the experts</center></h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+
+			<!-- Modal body -->
+			<div class="modal-body">
+				<!-- <div class="colorback"> -->
+					<!-- <h3><center>Craig Lockwood</center></h3> -->
+					<div class="row">
+						<div class="col-lg-3 col-xm-12 ">
+							<img src="images/masterpin2.png" class="mainimage">
+							<!-- <img src="images/craig2.jpg" class="cont-image"> -->
+							<!-- <img src="images/pin2.png" class="pin"> -->
+						</div>
+						<div class="col-lg-9 col-xm-12">
+							<h3><center>{{ j.name }}</center></h3>
+							<p class="para">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th cenlorum for use in a type specimen book.unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attribut</p>
+						</div>
+                          {% endfor %}
+					</div>
+
+				<hr>
+				<h2>Contact</h2>
+				<hr>
+				<form action="#" method="post">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="email" class="form-control" placeholder="Enter name" id="name">
+					</div>
+					<div class="form-group">
+						<label for="email">Email address:</label>
+						<input type="email" class="form-control" placeholder="Enter email" id="email">
+					</div><div class="form-group">
+					<label for="Phone">Phone number</label>
+					<input type="number" class="form-control" placeholder="Enter phone" id="email">
+				</div>
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea class="form-control" rows="5" id="comment"></textarea>
+				</div>
+				<!-- <div class="form-group form-check">
+							<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> Remember me
+							</label>
+				</div> -->
+				<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+			</form>
+		</div>
+		<!-- Modal footer -->
+		<div class="modal-footer" bg-light>
+			<button type="button" class="btn btn-danger btn-lg" data-dismiss="modal">Close</button>
+		</div>
+	</div>
+</div>
+
+
+
+
+</div>
+
+{% endblock %}

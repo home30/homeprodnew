@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="modaltest.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/modaltest.css' %}">
+</head>
+<body>
+<h1>
+MODAL HERE</h1>
+{% for i in teams %}
+
+<div class="mymodal">
+	<h1>3{{ i.name }}</h1>
+	<button class="closemodal">close</button>
+
+</div>
+<div class="moe{{i.id}}">
+	<h1>{{ i.name }}</h1>
+</div>
+{% endfor %}
+<div><h1>some contnet</h1>
+	<button class="button1">Clickme</button>
+	<button class="button1">Clickme</Dbutton>
+	<button class="button1">Clickme</Dbutton>
+
+</div>
+
+<script type="text/javascript" src="{% static 'assets/js/modaljs.js' %}"></script>
+</body>
+</html>

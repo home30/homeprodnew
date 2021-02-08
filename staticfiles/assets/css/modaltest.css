@@ -1,0 +1,21 @@
+.mymodal{
+	position: fixed;
+	top:200px;
+	left: 200px;
+	background-color: black;
+	height: 50vh;
+	width: 80vh;
+	color:white;
+	display: none;
+}
+/*.back{
+		position: fixed;
+	top:200px;
+	left: 200px;
+	background-color: black;
+	height: 50vh;
+	width: 80vh;
+	color:white;
+	display: none;
+}
+*/
