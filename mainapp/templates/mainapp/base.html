@@ -55,7 +55,7 @@
             <div class="col-lg-7 col-md-8 col-xs-12">
               <!-- Start Contact Info -->
               <ul class="links clearfix">
-                <li><i class="lni-phone-handset"></i>0203 5000 999</li>
+                <li><i class="lni-phone-handset"></i>0201 8975545</li>
                 <li><i class="lni-envelope"></i> info@99home.co.uk</li>
                 <li><a href="#"><i class="lni-map-marker"></i> 38A Court Parade, East Lane,Wembley, HA0 3HS</a></li>
               </ul>
@@ -87,14 +87,14 @@
               <span class="navbar-toggler-icon"></span>
               <span class="lin-menu"></span>
             </button>
-            <a class="navbar-brand" href="{% url 'index' %}><img src="{% static 'assets/img/logo.png' %}" alt=""></a>
+            <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'assets/img/logo.png' %}" alt=""></a>
           </div>
 
           <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="navbar-nav mr-auto w-100 justify-content-center">
               <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="{% url 'index' %}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Home <i class="fa fa-angle-down"></i>
+                <a class="nav-link dropdown-toggle" href="{% url 'index' %}"  aria-haspopup="true" aria-expanded="false">
+                  Home
                 </a>
 <!--                <div class="dropdown-menu">-->
 <!--                  <a class="dropdown-item active" href="index.html">Home V1</a>-->
@@ -103,8 +103,8 @@
 <!--                </div>-->
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Sell <i class="fa fa-angle-down"></i>
+                <a class="nav-link dropdown-toggle" href="{% url 'landlords' %}"  aria-haspopup="true" aria-expanded="false">
+                  Sell
                 </a>
                 <!-- <div class="dropdown-menu"> -->
                  <!--  <a class="dropdown-item" href="listing.html">Simple Listing</a>
@@ -113,8 +113,8 @@
                 <!-- </div> -->
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  LET <i class="fa fa-angle-down"></i>
+                <a class="nav-link dropdown-toggle" href="{% url 'packages' %}"   aria-haspopup="true" aria-expanded="false">
+                  LET
                 </a>
                <!--   <div class="dropdown-menu">
                   <a class="dropdown-item" href="property.html">Default- Variation</a>
@@ -123,8 +123,8 @@
                 </div> -->
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Management <i class="fa fa-angle-down"></i>
+                <a class="nav-link dropdown-toggle" href="{% url 'management' %}"  aria-haspopup="true" aria-expanded="false">
+                  Management
                 </a>
                <!--  <div class="dropdown-menu">
                   <a class="dropdown-item" href="portfolio-2.html">2 Columns Gallery</a>
@@ -133,21 +133,21 @@
                 </div> -->
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="{% url 'auction' %}"   aria-haspopup="true" aria-expanded="false">
                   Auction <i class="fa fa-angle-down"></i>
                 </a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="about.html">About Us</a>
-                  <a class="dropdown-item" href="agents.html">Agents</a>
-                  <a class="dropdown-item" href="rent.html">For Rent</a>
-                  <a class="dropdown-item" href="sale.html">For Sale</a>
-                  <a class="dropdown-item" href="pricing.html">Pricing Tables</a>
-                  <a class="dropdown-item" href="dashboard.html">Dashboard</a>
-                  <a class="dropdown-item" href="submit-property.html">Submission Form</a>
-                  <a class="dropdown-item" href="faq.html">FAQ</a>
-                  <a class="dropdown-item" href="testimonials.html">Testimonials</a>
-                  <a class="dropdown-item" href="typography.html">Typography</a>
-                </div>
+<!--                <div class="dropdown-menu">-->
+<!--                  <a class="dropdown-item" href="about.html">About Us</a>-->
+<!--                  <a class="dropdown-item" href="agents.html">Agents</a>-->
+<!--                  <a class="dropdown-item" href="rent.html">For Rent</a>-->
+<!--                  <a class="dropdown-item" href="sale.html">For Sale</a>-->
+<!--                  <a class="dropdown-item" href="pricing.html">Pricing Tables</a>-->
+<!--                  <a class="dropdown-item" href="dashboard.html">Dashboard</a>-->
+<!--                  <a class="dropdown-item" href="submit-property.html">Submission Form</a>-->
+<!--                  <a class="dropdown-item" href="faq.html">FAQ</a>-->
+<!--                  <a class="dropdown-item" href="testimonials.html">Testimonials</a>-->
+<!--                  <a class="dropdown-item" href="typography.html">Typography</a>-->
+<!--                </div>-->
               </li>
              <!--  <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -159,7 +159,7 @@
                 </div>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">
+                <a class="nav-link" href="{% url 'contact' %}" >
                   Contact Us
                 </a>
               </li>
