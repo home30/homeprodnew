@@ -31,3 +31,6 @@ def auction(request):
 
 def management(request):
     return render(request, 'mainapp/management.html')
+
+def contact(request):
+    return render(request,'mainapp/contact.html')
