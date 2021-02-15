@@ -2,136 +2,22 @@
 {% load static %}
 
 {% block content %}
-<!-- Pricing Table -->
-<section class="pricing section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-title-header text-center">
-                    <h2 class="section-title"> Our packages</h2>
-                    <p>It’s quick and easy. We do everything like the highstreet agent does with pocket-friendly prices
-                        with easy payment options.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <!-- Single Table -->
-            <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="pricing-table text-center">
-                    <div class="table-header">
-                        <h3>
-                            Basic
-                        </h3>
-                    </div>
-                    <div class="plan">
-                        <h3 class="price">
-                            £249
-                        </h3>
-                        <p class="period">
-                            incl VAT.
-                        </p>
-                    </div>
-                    <div class="plan-info">
-                        <p>
-                            <strong><i class="lni-check-box"></i> Includes listing to the top portals </strong>
-                            <!--                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. -->
-                        </p>
-                        <!--                <p>-->
-                        <!--                  <strong><i class="lni-check-box"></i> Number of Ads: 15</strong>-->
-                        <!--                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. -->
-                        <!--                </p>-->
-                        <!--                <p>-->
-                        <!--                  <strong><i class="lni-check-box"></i> Featured Ads: 5</strong>-->
-                        <!--                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. -->
-                        <!--                </p>-->
-                        <div class="button-area">
-                            <a href="#" class="btn btn-common btn-lg">
-                                Get Started Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Single Table -->
-            <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="pricing-table pricing-active text-center">
-                    <div class="table-header">
-                        <h3>
-                            Elite
-                        </h3>
-                    </div>
-                    <div class="plan">
-                        <h3 class="price">
-                            £699
-                        </h3>
-                        <p class="period">
-                            incl VAT.
-                        </p>
-                    </div>
-                    <div class="plan-info">
-                        <!--                <p>-->
-                        <!--                  <strong><i class="lni-check-box"></i> Ad Visibility: 5 Months</strong>-->
-                        <!--                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. -->
-                        <!--                </p>-->
-                        <p>
-                            <strong><i class="lni-check-box"></i> Includes, photo, floorplan and video walk </strong>
-                            <!--                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. -->
-                        </p>
-                        <!--                <p>-->
-                        <!--                  <strong><i class="lni-check-box"></i> Featured Ads: 10</strong>-->
-                        <!--                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. -->
-                        <!--                </p>-->
-                        <div class="button-area">
-                            <a href="#" class="btn btn-common btn-lg">
-                                Get Started Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
+ <!-- Our Packages Table -->
+ <section id="intro" class="section-intro">
+      <div class="search-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="intro-title">Our Packages</h2>
+              <h4 class="intro-sub-heading">Please call us for detailed valuation at <span><i class="lni lni-phone"></i> 02018975545 </span>and list your property for 1% Incl VAT</h4>
+                <a href="{% url 'contact' %}" class="btn btn-danger btn-lg">Contact</a>
             </div>
-            <!-- Single Table -->
-            <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="pricing-table text-center">
-                    <div class="table-header">
-                        <h3>
-                            Elite Pro
-                        </h3>
-                    </div>
-                    <div class="plan">
-                        <h3 class="price">
-                            £999
-                        </h3>
-                        <p class="period">
-                            From 0.8% incl VAT
-                        </p>
-                    </div>
-                    <div class="plan-info">
-                        <p>
-                            <strong><i class="lni-check-box"></i> The traditional highstreet package with paylater
-                                option</strong>
-                            <!--                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. -->
-                        </p>
-                        <!--                <p>-->
-                        <!--                  <strong><i class="lni-check-box"></i> Number of Ads: 100</strong>-->
-                        <!--                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. -->
-                        <!--                </p>-->
-                        <!--                <p>-->
-                        <!--                  <strong><i class="lni-check-box"></i> Featured Ads: 30</strong>-->
-                        <!--                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. -->
-                        <!--                </p>-->
-                        <div class="button-area">
-                            <a href="#" class="btn btn-common btn-lg">
-                                Get Started Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</section>
-<!-- Pricing Table End -->
+      </div>
+    </section>
+
+
 
 {% endblock %}
