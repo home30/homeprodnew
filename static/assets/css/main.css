@@ -1,3 +1,4 @@
+{% load static %}
 /*
 Theme Name:       EstateBit - Real Estate Bootstrap HTML5 Template
 Author:           UIdeck
@@ -923,7 +924,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 intro section style
 ====================================================*/
 .section-intro {
-  /*background: url("../img/background/bg-intro.jpg") center center no-repeat;*/
+  background: url("http://18.191.211.57/static/assets/img/webbanner.jpg") center center no-repeat;
   background-size: cover;
   color: #fff;
   position: relative;
