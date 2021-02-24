@@ -34,3 +34,9 @@ def management(request):
 
 def contact(request):
     return render(request,'mainapp/contact.html')
+
+def privacy(request):
+    return render(request,'mainapp/privacy.html')
+
+def cookie(request):
+    return render(request,'mainapp/cookie.html')
